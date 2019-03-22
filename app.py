@@ -28,6 +28,8 @@ urls = (
     '/clientes/edit/(.+)', 'application.controllers.clientes.edit.Edit',
     '/clientes/delete/(.+)', 'application.controllers.clientes.delete.Delete',
     '/clientes/insert', 'application.controllers.clientes.insert.Insert',
+
+    '/api_clientes/?', 'application.api.clientes.api_clientes.Api_clientes',
 )
 
 app = web.application(urls, globals())
