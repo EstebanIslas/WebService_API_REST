@@ -22,6 +22,12 @@ urls = (
     '/logs', 'application.controllers.logs.index.Index',
     '/logs/printer', 'application.controllers.logs.printer.Printer',
     '/logs/view/(.+)', 'application.controllers.logs.view.View',
+
+    '/clientes', 'application.controllers.clientes.index.Index',
+    '/clientes/view/(.+)', 'application.controllers.clientes.view.View',
+    '/clientes/edit/(.+)', 'application.controllers.clientes.edit.Edit',
+    '/clientes/delete/(.+)', 'application.controllers.clientes.delete.Delete',
+    '/clientes/insert', 'application.controllers.clientes.insert.Insert',
 )
 
 app = web.application(urls, globals())
